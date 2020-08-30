@@ -2,10 +2,10 @@
 :COMIENZO
 CHCP 850
 setlocal EnableDelayedExpansion
-SET FONDO=5F
+SET FONDO=0F
 color %FONDO%
-title Chigüi 4.0
-mode con:cols=75 lines=23
+mode con:cols=76 lines=25
+title Chigui
 
 
 :: Hasta acá termina la función que evita líneas duplicadas en el registro
@@ -22,22 +22,22 @@ if not defined PID goto BBB
 cls
 echo.
 echo.
-echo         ██████╗██╗  ██╗██╗ ██████╗ ██╗   ██╗██╗    ██╗  ██╗    ██████╗ 
-echo        ██╔════╝██║  ██║██║██╔════╝ ██║   ██║██║    ██║  ██║   ██╔═████╗
-echo        ██║     ███████║██║██║  ███╗██║   ██║██║    ███████║   ██║██╔██║
-echo        ██║     ██╔══██║██║██║   ██║██║   ██║██║    ╚════██║   ████╔╝██║
-echo        ╚██████╗██║  ██║██║╚██████╔╝╚██████╔╝██║         ██║██╗╚██████╔╝
-echo         ╚═════╝╚═╝  ╚═╝╚═╝ ╚═════╝  ╚═════╝ ╚═╝         ╚═╝╚═╝ ╚═════╝ 
-echo                             Creado por Rafael Yépez 
+echo  [33m       ██████╗██╗  ██╗██╗ ██████╗ ██╗   ██╗██╗    ██╗  ██╗    ██████╗ [0m
+echo  [33m      ██╔════╝██║  ██║██║██╔════╝ ██║   ██║██║    ██║  ██║   ██╔═████╗[0m
+echo  [33m      ██║     ███████║██║██║  ███╗██║   ██║██║    ███████║   ██║██╔██║[0m
+echo  [33m      ██║     ██╔══██║██║██║   ██║██║   ██║██║    ╚════██║   ████╔╝██║[0m
+echo  [33m      ╚██████╗██║  ██║██║╚██████╔╝╚██████╔╝██║         ██║██╗╚██████╔╝[0m
+echo  [90m       ╚═════╝╚═╝  ╚═╝╚═╝ ╚═════╝  ╚═════╝ ╚═╝         ╚═╝╚═╝ ╚═════╝ [0m
 echo.
-echo     ═══════════════════════════════════════════════════════════════════
+echo.
+echo     [93m═══════════════════════════════════════════════════════════════════[0m
 echo                               EL ÚLTIMO PID USADO
-echo                       ╔══════════════════════════════╗
-echo                       ║           %PID%         ║
-echo                       ╚══════════════════════════════╝
+echo.                      
+echo                             [96m      %PID%      [0m
+echo.                      
 echo.
-echo       PRESIONA ENTER PARA CONTINUAR CON EL PID: %PID%
-echo       PRESIONA   0   PARA COLOCAR UN NUEVO PID
+echo           PRESIONA [36mENTER[0m 0 PARA CONTINUAR CON EL PID: [96m%PID%[0m
+echo           PRESIONA [36m  0  [0m PARA COLOCAR UN NUEVO PID
 echo.
 SET /P "OPCION=:                                    "
 if not defined OPCION goto ccc
@@ -53,20 +53,20 @@ color %FONDO%
 cls
 echo.
 echo.
-echo         ██████╗██╗  ██╗██╗ ██████╗ ██╗   ██╗██╗    ██╗  ██╗    ██████╗ 
-echo        ██╔════╝██║  ██║██║██╔════╝ ██║   ██║██║    ██║  ██║   ██╔═████╗
-echo        ██║     ███████║██║██║  ███╗██║   ██║██║    ███████║   ██║██╔██║
-echo        ██║     ██╔══██║██║██║   ██║██║   ██║██║    ╚════██║   ████╔╝██║
-echo        ╚██████╗██║  ██║██║╚██████╔╝╚██████╔╝██║         ██║██╗╚██████╔╝
-echo         ╚═════╝╚═╝  ╚═╝╚═╝ ╚═════╝  ╚═════╝ ╚═╝         ╚═╝╚═╝ ╚═════╝ 
-echo                             Creado por Rafael Yépez 
+echo  [33m       ██████╗██╗  ██╗██╗ ██████╗ ██╗   ██╗██╗    ██╗  ██╗    ██████╗ [0m
+echo  [33m      ██╔════╝██║  ██║██║██╔════╝ ██║   ██║██║    ██║  ██║   ██╔═████╗[0m
+echo  [33m      ██║     ███████║██║██║  ███╗██║   ██║██║    ███████║   ██║██╔██║[0m
+echo  [33m      ██║     ██╔══██║██║██║   ██║██║   ██║██║    ╚════██║   ████╔╝██║[0m
+echo  [33m      ╚██████╗██║  ██║██║╚██████╔╝╚██████╔╝██║         ██║██╗╚██████╔╝[0m
+echo  [90m       ╚═════╝╚═╝  ╚═╝╚═╝ ╚═════╝  ╚═════╝ ╚═╝         ╚═╝╚═╝ ╚═════╝ [0m
 echo.
-echo     ═══════════════════════════════════════════════════════════════════
-echo                             Introduce tu PID
-echo            Es necesario para poder llevar registro de los HIGH
 echo.
-echo                                  TU PID ACÁ:
-Set /P "PID=:                                "
+echo     [93m═══════════════════════════════════════════════════════════════════[0m
+echo.
+echo                             INTRODUCE TU [96mPID[0m AQUÍ
+echo.
+echo                            (Debe tener 10 dígitos)[96m
+Set /P "PID=:                                "[0m
 
 
 :CCC
@@ -85,52 +85,176 @@ SET HIGHT=
 SET a=
 SET b=
 
+
+set "Archivo=EnlacesJumpeables.txt"
+<"!Archivo!" (
+  for /f %%i in ('type "!Archivo!" ^| find /c /v ""') do set /a n=%%i && for /l %%j in (1 1 %%i) do (
+    set /p "line_%%j="
+  )
+)
+
+SET SUR1=%line_1:~52,5%
+SET SUR2=%line_2:~52,5%
+SET SUR3=%line_3:~52,5%
+SET SUR4=%line_4:~52,5%
+SET SUR5=%line_5:~52,5%
+SET SUR6=%line_6:~52,5%
+SET SUR7=%line_7:~52,5%
+SET SUR8=%line_8:~52,5%
+SET SUR9=%line_9:~52,5%
+SET SUR10=%line_10:~52,5%
+
+set NU1=1
+set NU2=2
+set NU3=3
+set NU4=4
+set NU5=5
+set NU6=6
+set NU7=7
+set NU8=8
+set NU9=9
+set NU10=10
+
+if "%SUR1%"=="~52,5" (
+  set SUR1=     
+)
+
+if "%SUR2%"=="~52,5" (
+  set SUR2=     
+)
+
+if "%SUR3%"=="~52,5" (
+  set SUR3=     
+)
+
+if "%SUR4%"=="~52,5" (
+  set SUR4=     
+)
+
+if "%SUR5%"=="~52,5" (
+  set SUR5=     
+)
+
+if "%SUR6%"=="~52,5" (
+  set SUR6=     
+)
+
+if "%SUR7%"=="~52,5" (
+  set SUR7=     
+)
+
+if "%SUR8%"=="~52,5" (
+  set SUR8=     
+)
+
+if "%SUR9%"=="~52,5" (
+  set SUR9=     
+)
+
+if "%SUR10%"=="~52,5" (
+  set SUR10=     
+)
+
+
+if "%SUR1%"=="     " (
+  set NU1=
+)
+
+if "%SUR2%"=="     " (
+  set NU2=
+)
+
+if "%SUR3%"=="     " (
+  set NU3=
+)
+
+if "%SUR4%"=="     " (
+  set NU4=
+)
+
+if "%SUR5%"=="     " (
+  set NU5=
+)
+
+if "%SUR6%"=="     " (
+  set NU6=
+)
+
+if "%SUR7%"=="     " (
+  set NU7=
+)
+
+if "%SUR8%"=="     " (
+  set NU8=
+)
+
+if "%SUR9%"=="     " (
+  set NU9=
+)
+
+if "%SUR10%"=="     " (
+  set NU10=
+)
+
+
 powershell "$InputFile = 'EnlacesJumpeables.txt' ; $content = Get-Content $InputFile ;  $content | Foreach {$_.TrimEnd()} | Set-Content EnlacesJumpeables2.txt"
 if exist EnlacesJumpeables2.txt del EnlacesJumpeables.txt & rename EnlacesJumpeables2.txt EnlacesJumpeables.txt
 
 PowerShell -NoP "(GC 'EnlacesJumpeables.txt') -Replace ' |\t',''|SC 'EnlacesJumpeablesSinEspacios.txt'"
 if exist EnlacesJumpeablesSinEspacios.txt del EnlacesJumpeables.txt & rename EnlacesJumpeablesSinEspacios.txt EnlacesJumpeables.txt
 
-PowerShell -NoP "(GC 'RegistroHigh.txt') -Replace '  |\t',' '|SC 'RegistroHigh2.txt'"
-if exist RegistroHigh2.txt del RegistroHigh.txt & rename RegistroHigh2.txt RegistroHigh.txt
-
 :: =======================================================================================================================================
-:: CONTADOR DE LÍNEAS PARA MOSTRAR LOS JUMP, BAISC, HIGH REGISTRADOS
 set "cmd=findstr /R /N "^^" EnlacesJumpeables.txt | find /C ":""					& for /f %%A in ('!cmd!') do set number=%%A
 :: =======================================================================================================================================
-:: Código en PowerShell insertado en el mismo batch para poder contar la cantidad de dólares acumulados y que sume decimales
-::PowerShell ForEach ($n in Get-Content .\total.txt) { [Double]$total += $n }; Write-Host $total ;> f.txt
-
 For /F "delims=" %%Y In ('PowerShell -Command "ForEach ($n in Get-Content .\total.txt) { [Double]$total += $n }; Write-Host $total ;"') Do Set "DOLARES=%%Y"
 :: ========================================================================================================================================
 SET PSID=%ENLACE:~49,5%
 color %FONDO%
+if exist cookie del cookie
+if exist high del high
+if exist high2 del high2
+if exist high_ del high_
+if exist basic del basic
+if exist basic2 del basic2
+fi exist basic_ del basic_
 cls
+
+
+
+if "%SUR8%"=="     " (
+  goto nana     
+)
+SET CUIDADO=CUIDADO HAY 8 JUMPS
+
+:nana
+title %number%
 echo.
 echo.
-echo         ██████╗██╗  ██╗██╗ ██████╗ ██╗   ██╗██╗    ██╗  ██╗    ██████╗ 
-echo        ██╔════╝██║  ██║██║██╔════╝ ██║   ██║██║    ██║  ██║   ██╔═████╗
-echo        ██║     ███████║██║██║  ███╗██║   ██║██║    ███████║   ██║██╔██║
-echo        ██║     ██╔══██║██║██║   ██║██║   ██║██║    ╚════██║   ████╔╝██║
-echo        ╚██████╗██║  ██║██║╚██████╔╝╚██████╔╝██║         ██║██╗╚██████╔╝
-echo         ╚═════╝╚═╝  ╚═╝╚═╝ ╚═════╝  ╚═════╝ ╚═╝         ╚═╝╚═╝ ╚═════╝ 
-echo                             Creado por Rafael Yépez 
-echo			 PID ACTUAL: %PID%   Último PSID: %ID%
-echo     ═══════════════════════════════════════════════════════════════════
-echo. 		
-echo     			TOTAL LINKS JUMPEABLES : %number%     	
-echo	   			TOTAL DÓLARES GENERADOS: %DOLARES%$
+echo  [33m       ██████╗██╗  ██╗██╗ ██████╗ ██╗   ██╗██╗    ██╗  ██╗    ██████╗ [0m
+echo  [33m      ██╔════╝██║  ██║██║██╔════╝ ██║   ██║██║    ██║  ██║   ██╔═████╗[0m
+echo  [33m      ██║     ███████║██║██║  ███╗██║   ██║██║    ███████║   ██║██╔██║[0m
+echo  [33m      ██║     ██╔══██║██║██║   ██║██║   ██║██║    ╚════██║   ████╔╝██║[0m
+echo  [33m      ╚██████╗██║  ██║██║╚██████╔╝╚██████╔╝██║         ██║██╗╚██████╔╝[0m
+echo  [90m       ╚═════╝╚═╝  ╚═╝╚═╝ ╚═════╝  ╚═════╝ ╚═╝         ╚═╝╚═╝ ╚═════╝ [0m
+echo.                              
+echo			 PID ACTUAL: [96m%PID%[0m   Último PSID: [91m%ID%[91m
+echo     [93m═══════════════════════════════════════════════════════════════════[0m
+echo                         TOTAL [36mLINKS[0m JUMPEABLES : [36m%number%[0m  [41m%CUIDADO%[0m
+echo                         TOTAL [92mDÓLARES[0m GENERADOS: [92m%DOLARES%$[0m
 echo.
-echo.	    
-echo     ═══════════════════════════════════════════════════════════════════
+echo                            [4mENCUESTAS GENERADAS[0m
+echo [36m           %NU1%     %NU2%     %NU3%     %NU4%     %NU5%     %NU6%     %NU7%     %NU8%     %NU9%    %NU10% [0m
+echo.         %SUR1% %SUR2% %SUR3% %SUR4% %SUR5% %SUR6% %SUR7% %SUR8% %SUR9% %SUR10%  
+echo     [93m═══════════════════════════════════════════════════════════════════[0m
 echo.
 
 
 :IntroduceEnlace
-echo                    Introduce el enlace de la encuesta:
+echo                    [95mIntroduce el enlace de la encuesta:[0m
+echo [91m
 Set  /P  "ENLACE= "
 set ENLACE=%ENLACE: =%
-
+[0m
 :BlackList
 SET id=%ENLACE:~49,5%
 find "%id%" ListaNegra.txt>block
@@ -186,11 +310,7 @@ goto Error7
 if %errorlevel%==1 (
 goto SiguienteYa
 )
-
 pause
-
-
-
 
 
 :SiguienteYa
@@ -198,6 +318,10 @@ echo %PID% >>pid.txt 2>&1
 echo %PSID%>>psid.txt 2>&1 
 Echo . |set /p="Get-Content pid.txt | Foreach-Object{ ; $PIDX = $_.Split('=')[0] ; Get-Content high.txt | Foreach-Object{ ; $HIGH = $_.Split('=')[0] ; Get-Content psid.txt | Foreach-Object{ ; $PSID = $_.Split('=')[0] }}} ; $A = $HIGH / $PIDX ; $C = ($A * $PIDX) - $HIGH ; $A = [math]::Round($A) ; $C = [math]::Round($B) ; $B = ($A * $PIDX) - $HIGH ; "$PSID $A $B" | Out-File RegistroHigh.txt -Encoding ascii -append ;">>high.ps1 2>&1 
 Powershell.exe -executionpolicy remotesigned -File  high.ps1
+del "high.txt" /s /f /q
+del "pid.txt" /s /f /q
+del "psid.txt" /s /f /q
+del "high.ps1" /s /f /q
 
 cls
 color F4
@@ -258,7 +382,9 @@ goto Encuestas
 
 
 :BASIC
-
+if exist high del high
+if exist high2 del high2
+if exist high_ del high_
 curl -s --cookie ./cookie -d "GLOconsulta=%PSID:~0,5%" -X POST http://eldeposito.net/app/search.php>basic_
 powershell (Get-Content basic_)[11]>basic2 
 powershell (Get-Content -path 'basic2' -Raw) -replace ' ','' -replace 't','' -replace 'd','' -replace '/','' -replace '\074','' -replace '\076','' -replace '\n','' -replace '\r','' -replace '\t','' -replace '\\r\n',''>basic 
@@ -303,7 +429,9 @@ echo.
 echo     PRESIONA 1... Si quieres Calificarla y registrar el link
 echo     PRESIONA 2... Si quieres Descalificarla y evitar registro
 echo     PRESIONA 3... Si quieres Cambiar el PID actual %PID%
-
+if exist basic del basic 
+if exist basic2 del basic2
+if exist basic_ del basic_
 SET PSID=%ENLACE:~49,5%
 Set /P "menup=:                                     "
 
@@ -342,7 +470,13 @@ goto Encuestas
 
 :Menu
 color %FONDO%
-
+if exist lol del lol
+if exist basic del basic
+if exist basic2 del basic2
+if exist basic_ del basic_
+if exist high del high
+if exist high_ del high_
+if exist high2_ del high2
 cls
 Echo.
 Echo.
@@ -469,7 +603,7 @@ echo %TOTAL% >>total.txt 2>&1
 echo %HIGH% >>high.txt 2>&1 
 echo %PID% >>pid.txt 2>&1 
 echo %PSID%>>psid.txt 2>&1 
-Echo . |set /p="Get-Content pid.txt | Foreach-Object{ ; $PIDX = $_.Split('=')[0] ; Get-Content high.txt | Foreach-Object{ ; $HIGH = $_.Split('=')[0] ; Get-Content psid.txt | Foreach-Object{ ; $PSID = $_.Split('=')[0] }}} ; $A = $HIGH / $PIDX ; $C = ($A * $PIDX) - $HIGH ; $A = [math]::Round($A) ; $C = [math]::Round($B) ; $B = ($A * $PIDX) - $HIGH ; "$PSID $A $B" | Out-File RegistroHigh.txt -Encoding ascii -append ;">>high.ps1 2>&1 
+Echo . |set /p="Get-Content pid.txt | Foreach-Object{ ; $PIDX = $_.Split('=')[0] ; Get-Content high.txt | Foreach-Object{ ; $HIGH = $_.Split('=')[0] ; Get-Content psid.txt | Foreach-Object{ ; $PSID = $_.Split('=')[0] }}} ; $A = $HIGH / $PIDX ; $C = ($A * $PIDX) - $HIGH ; $A = [math]::Round($A) ; $C = [math]::Round($B) ; $B = ($A * $PIDX) - $HIGH ; "$PSID $A $B" | ;">>high.ps1 2>&1 
 Powershell.exe -executionpolicy remotesigned -File  high.ps1
 del "high.txt" /s /f /q
 del "pid.txt" /s /f /q
